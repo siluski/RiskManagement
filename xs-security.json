@@ -11,7 +11,7 @@
       "description": "RiskManager"
     },
     {
-      "name": "$XSAPPNAME.RiskViewer ",
+      "name": "$XSAPPNAME.RiskViewer",
       "description": "RiskViewer "
     }
   ],
@@ -34,10 +34,10 @@
       "attribute-references": []
     },
     {
-      "name": "RiskViewer ",
+      "name": "RiskViewer",
       "description": "generated",
       "scope-references": [
-        "$XSAPPNAME.RiskViewer "
+        "$XSAPPNAME.RiskViewer"
       ],
       "attribute-references": []
     }
