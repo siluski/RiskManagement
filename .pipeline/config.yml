@@ -28,23 +28,22 @@ Release:
 ### Step-specific configuration
 steps:
 
-- sonarExecuteScan:
-   projectKey: 'risk-management-project'
-   serverUrl: 'http://localhost:9000'
-   token: '725f289adf2f746acb5e5d98e829bd1b47368ada'
-   dockerImage: 'sonarqube'
-   branchName: 'master'
+ sonarExecuteScan:
+  projectKey: 'risk-management-project'
+  serverUrl: 'http://localhost:9000'
+  token: '725f289adf2f746acb5e5d98e829bd1b47368ada'
+  dockerImage: 'sonarqube'
+  branchName: 'master'
 
-- cloudFoundryDeploy:
-   cloudFoundry:
-    apiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
-    org: "SAP CoE NA"
-    space: "dev"
+ cloudFoundryDeploy:
+  cloudFoundry:
+   apiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
+   org: "SAP CoE NA"
+   space: "dev"
    #credentialsId: "myDeploymentCredentialsId"
-    appName: ""
-   mtaDeployParameters: "-f --version-rule ALL"
-   
-- artifactPrepareVersion:
+   appName: ""
+  mtaDeployParameters: "-f --version-rule ALL"
+ artifactPrepareVersion:
   versioningType: "cloud_noTag"
   
  
