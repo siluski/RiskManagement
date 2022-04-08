@@ -27,12 +27,13 @@ Release:
 
 ### Step-specific configuration
 steps:
+
  sonarExecuteScan:
-  projectKey: "risk-management-project"
-  serverUrl: "http://localhost:9000"
-  token: "725f289adf2f746acb5e5d98e829bd1b47368ada"
-  dockerImage: "sonarqube"
-  branchName: "master"
+  projectKey: 'risk-management-project'
+  serverUrl: 'http://localhost:9000'
+  token: '725f289adf2f746acb5e5d98e829bd1b47368ada'
+  dockerImage: 'sonarqube'
+  branchName: 'master'
 
  cloudFoundryDeploy:
   cloudFoundry:
