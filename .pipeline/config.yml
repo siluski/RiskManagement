@@ -40,8 +40,10 @@ steps:
   
  sonarExecuteScan:
   projectKey: "risk-management-project"
-  serverUrl: "https://localhost:9000"
+  serverUrl: "http://localhost:9000"
   token: "725f289adf2f746acb5e5d98e829bd1b47368ada"
+  dockerImage: "sonarqube"
+  branchName: "master"
 
   artifactPrepareVersion:
     versioningType: cloud_noTag
