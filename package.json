@@ -6,17 +6,20 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^5",
-    "@sap/hdi-deploy": "^4.2.3",
-    "@sap/xsenv": "^3.2.0",
+    "@sap/cds": "^5.9.2",
+    "@sap/cds-mtx": "^2.5.3",
+    "@sap/hdi-deploy": "^4.3.2",
+    "@sap/xsenv": "^3.2.1",
     "@sap/xssec": "^3.2.12",
+    "cfenv": "^1.2.4",
     "express": "^4",
     "hdb": "^0.18.3",
-    "passport": "^0.5.2"
+    "passport": "^0.5.2",
+    "xhr2": "^0.2.1"
   },
   "engines": {
-    "node": "^12.0.0",
-    "npm": "6.14.15"
+    "node": "^14.0.0",
+    "npm": "8.6.0"
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.96.2",

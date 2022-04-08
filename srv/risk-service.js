@@ -1,10 +1,14 @@
 //Imports 
 const cds = require("@sap/cds");
-
+const cfenv = require("cfenv");
 /** The service implementation with
  * all service handlers
  */
+var appEnv = cfenv.getAppEnv({'vcapFile':'vcap.json'});
+    
 module.exports = cds.service.impl(async function () {
+    console.log("hello");
+    console.log("server starting on " + appEnv.url);
     //Define constants for the Risk and BP entitites from the risk-service.cds file
     const { Risks, BusinessPartners} = this.entities;
     /**
@@ -60,4 +64,15 @@ module.exports = cds.service.impl(async function () {
             );
         }catch (error) {}
      });
+    
+    /*const oServices = cfenv.getAppEnv().getServices();
+    const uaa_service = cfenv.getAppEnv().getService('risk-management-xsuaa');
+    const dest_service = cfenv.getAppEnv().getService('risk-management-destination-service');
+    const sUaaCredentials = dest_service.credentials.clientid + ':' + dest_service.credentials.clientsecret;
+
+    const sDestinationName = 'scp';
+    const sEndpoint = '/secure/';
+
+    console.log(sUaaCredentials);*/
+
 });
