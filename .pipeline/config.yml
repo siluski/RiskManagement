@@ -38,6 +38,10 @@ steps:
  artifactPrepareVersion:
   versioningType: "cloud_noTag"
   
+  sonarExecuteScan:
+   projectKey: "risk-management-project"
+   serverUrl: "https://localhost:9000"
+   token: "725f289adf2f746acb5e5d98e829bd1b47368ada"
 
   artifactPrepareVersion:
     versioningType: cloud_noTag
