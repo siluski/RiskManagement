@@ -7,7 +7,7 @@
  * More information on getting started with Continuous Delivery can be found here: https://sap.github.io/jenkins-library/
  */
 
-@Library('piper-lib-os') _
+library('piper-lib-os')
 
 //piperPipeline script: this
 
