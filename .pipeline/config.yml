@@ -30,9 +30,9 @@ Release:
 steps:
 
  sonarExecuteScan:
-  projectKey: 'risk-management-project'
-  serverUrl: 'http://localhost:9000'
-  token: '725f289adf2f746acb5e5d98e829bd1b47368ada'
+  projectKey: 'i311672-risk-test'
+  serverUrl: 'https://sonar.tools.sap'
+  token: '043f9a3251a9fa2ef9fcc06552eccf2ca3dbae2d'
   
   
   
