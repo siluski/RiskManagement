@@ -16,6 +16,7 @@ general:
 
 Build:
  mavenExecuteStaticCodeChecks: false
+ sonarExecuteScan: true
  npmExecuteLint: false
 Additional Unit Tests:
  npmExecuteScripts: false 
