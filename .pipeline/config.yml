@@ -13,10 +13,10 @@
 ### General project setup
 general:
   inferBuildTool: true
+  sonarExecuteScan: true
 
 Build:
  mavenExecuteStaticCodeChecks: false
- sonarExecuteScan: true
  npmExecuteLint: false
 Additional Unit Tests:
  npmExecuteScripts: false 
