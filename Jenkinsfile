@@ -11,4 +11,5 @@
 
 piperPipeline script: this
 
+library('piper-lib-os')
 sonarExecuteScan script: this
