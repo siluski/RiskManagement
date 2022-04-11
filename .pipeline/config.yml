@@ -34,7 +34,7 @@ steps:
   serverUrl: 'http://localhost:9000'
   token: '725f289adf2f746acb5e5d98e829bd1b47368ada'
   dockerName: 'sonarqube'
-  dockerImage: 'sonarqube'
+  dockerImage: 'sonarqube:latest'
   
 
  cloudFoundryDeploy:
