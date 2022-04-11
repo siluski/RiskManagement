@@ -11,5 +11,12 @@
 
 piperPipeline script: this
 
-library('piper-lib-os')
-sonarExecuteScan script: this
+
+@Library('piper-lib-os') _
+tools {
+        jdk "jdk-1.8.101"
+      }
+steps {
+    sh 'java -version'
+    sonarExecuteScan script: this
+}
